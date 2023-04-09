@@ -1,0 +1,98 @@
+Section 01
+
+Basic Git Commands:
+
+1) git init:
+it is used to create an empty Git repository.
+it is hardly used, once for a single project.
+
+2)git add:
+it is used to add file contents to the index.
+Git index
+
+    The git "index" is where you place files you want commit to the git repository.
+
+    The index is also known as cache, directory cache, current directory cache, staging area, staged files.
+
+    Before you "commit" (checkin) files to the git repository, you need to first place the files in the git "index".
+
+    The index is not the working directory: you can type a command such as git status, and git will tell you what files in your working directory have been added to the git index (for example, by using the git add filename command).
+
+    The index is not the git repository: files in the git index are files that git would commit to the git repository if you used the git commit command.
+
+
+3)git commit:
+it is used to record changes to the repository.
+
+4)git merge:
+it is used to join two or more development histories together.
+
+5) git log:
+
+it is used to show commit logs.
+logs are commit messages that one has made.
+
+6)git reflog:
+it is used to manage reflog information.
+
+7)git rebase:
+
+it is used to reapply commits on top of another base tip.
+it helps to change the history of branches.
+in some companies this command is forbidden because of that.
+
+8)git clone: 
+
+it is used to clone a repository into a new directory to the local machine.
+
+9)git diff:
+
+it is used to show changes between commits, commit and working tree, etc.
+
+10)git remote:
+
+it is used to manage set of tracked repositories.
+when you are linking your local repository to a remote tracker like GitHubor GitLab, you're going to use that git remote to link between them.
+
+
+Section 02
+
+Practicing Git Commands:
+1) Git init:
+create a folder you want to make a git folder, go into this folder and type the command git init. After having executed this command a new folder called .git will apear among the hidden folders. we created a file in the folder(git repository) and executed the command git status.
+
+2) Git add:
+
+we have used the command 'git add filename' to add this file to the staging-area.
+if one changes the content of that file one must execute the command 'git add filename' again to add the changes to the staging-area.
+
+3) Git commit:
+
+In order to bring the file and its changes from the staging-area to the local repository, you have to use the command 'git commit -m "messeage".
+if you commited changes and do want to restore the file(undo the commited changes)you need to use the command 'git checkout hashCodeOfTheCommit".
+To get the hush code of the commit, you have to use the command 'git log'.
+If you want to get the changes back, you have to use the command 'git switch -'.
+
+4)git branch:
+if you need help or information about how to use a particular git command you can go to the docomentation of git(https://git-scm.com/doc). 
+
+this command is used to create, delete and list the existing branches. 
+
+5) git checkout:
+
+To jump to an other branch, you have to use the command 'git checkout thebranchToGO'.
+command:git checkout -B filename. if a file does not exist ,you could create a branch using the option -B and switch to it with checkout.
+
+6) git ignore:
+A gitignore file specifies intentionally untracked files that Git should ignore.
+If we created branches before creating the .gitignore file, we need to create a .gitignore file in every branch.
+Therefor it  is always better to create this file in the branch master(main) and before creating any branches.
+In order to not keep tracking of a file, we need to write its name inside the .gitignore file.
+It is hard to know which files should be tracked and which not, so there are a lot of
+templates for  .gitignore file according to the type of technology that one uses.
+For example on the website https://www.toptal.com/developers/gitignore you could get a .gitignore for android project.
+
+7)git push:
+It is used to push or send or upload the code to be stored and saved on that remote server like GitLab or GitHub.
+
+
